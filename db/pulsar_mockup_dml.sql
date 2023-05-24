@@ -7,6 +7,12 @@ VALUES ('test1@test.com', 'test1234!', '테스트1'),
     ('test4@test.com', 'test1234!', '테스트4'),
     ('test5@test.com', 'test1234!', '테스트5'),
     ('test6@test.com', 'test1234!', '테스트6');
+    
+insert into tb_member (email, password, nickname)
+values('postman@test.com', 'apitest1234!', '통합테스트1');
+
+insert into tb_concern_tag values(7, 2), (7, 4), (7, 5);
+select * from tb_member;
 
 -- 임시 게시글 데이터 추가
 INSERT INTO TB_ARTICLE (TITLE, WRITER_ID, CONTENT, LIKE_CNT, VIEW_CNT)
@@ -28,21 +34,49 @@ VALUES (1, 4),
 
 -- 임시 태그
 INSERT INTO TB_TAG_INFO
-VALUES (1, '체중'),
-    (2, '운동'),
-    (3, '요가'),
-    (4, '헬스'),
-    (5, '근육'),
-    (6, '필라테스');
+VALUES (1, '체중감량'),
+    (2, '자세'),
+    (3, '식단'),
+    (4, '지구력'),
+    (5, '체지방'),
+    (6, '근육'),
+    (7, '실천'),
+    (8, '목표설정'),
+    (9, '운동방식'),
+    (10, '헬스장'),
+    (11, '요가'),
+    (12, '필라테스'),
+    (13, '헬스'),
+    (14, '부상'),
+    (15, '건강'),
+    (16, '동기부여'),
+    (17, '시간'),
+    (18, '헬린이'),
+    (19, '고인물'),
+    (20, '바디프로필'),
+    (21, '근력'),
+    (22, '균형'),
+    (23, '유연성'),
+    (24, '꿀팁');
 
 -- 임시 운동
 INSERT INTO TB_EXERCISE
-VALUES (1, '상체'),
-    (2, '하체'),
-    (3, '복근'),
+VALUES (1, '상체운동'),
+    (2, '하체운동'),
+    (3, '복근운동'),
     (4, '요가'),
     (5, '필라테스'),
-    (6, '등');
+    (6, '등운동'),
+    (7, '이두운동'),
+    (8, '삼두운동'),
+    (9, '어깨운동'),
+    (10, '가슴운동'),
+    (11, '다리운동'),
+    (12, '스트레칭'),
+    (13, '맨몸운동'),
+    (14, '유산소운동'),
+    (15, '명상'),
+    (16, '휴식');
 
 -- 임시 게시글 태그
 INSERT INTO TB_ARTICLE_TAG
@@ -86,4 +120,3 @@ VALUES (1, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE),
     (3, FALSE, TRUE, TRUE, TRUE, FALSE, TRUE, FALSE),
     (4, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE),
     (5, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE);
-
