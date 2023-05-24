@@ -6,7 +6,11 @@ VALUES ('test1@test.com', 'test1234!', '테스트1'),
     ('test3@test.com', 'test1234!', '테스트3'),
     ('test4@test.com', 'test1234!', '테스트4'),
     ('test5@test.com', 'test1234!', '테스트5'),
-    ('test6@test.com', 'test1234!', '테스트6');
+    ('test5@test.com', 'test1234!', '테스트6'),
+    ('test5@test.com', 'test1234!', '테스트7'),
+    ('test5@test.com', 'test1234!', '테스트8'),
+    ('test5@test.com', 'test1234!', '테스트9'),
+    ('test5@test.com', 'test1234!', '테스트10');
     
 insert into tb_member (email, password, nickname)
 values('postman@test.com', 'apitest1234!', '통합테스트1');
